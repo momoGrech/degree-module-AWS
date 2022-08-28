@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Zen+Kaku+Gothic+New:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <p id="output-description"></p>
+        <p id="output"> <span id="result"> </span></p>
+        <hr>
+        <input type="radio" name="colors" id="avg" hidden>
+        <input type="radio" name="colors" id="middle" hidden>
+        <input type="radio" name="colors" id="a-pow-b" hidden>
+        <input type="radio" name="colors" id="sqr-root" hidden>
+        <section id="main-content">
+            <div class="values">
+                <input placeholder="Insert Value of A" type="text" id="num1" disabled>
+                <input placeholder="Insert Value of B" type="text" id="num2" disabled>
+                <input placeholder="Insert Value of C" type="text" id="num3" disabled>
+            </div>
+            <div id="button-options">
+                <button type="button" onclick="ABC_average()">Get Average</button>
+                <button type="button" onclick="middle_value()">Get middle value</button>
+                <button type="button" onclick="power()">A to power of B</button>
+                <button type="button" onclick="square()">Square root </button>
+            </div>
+            <div id="button-calculator">
+                <button type="button" onclick="calculate()" id="calc">Calculate</button>
+                <button type="button" onclick="reset()">Reset</button>
+            </div>
+            
+        </section>
+    </body>
+</html>
